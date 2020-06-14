@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Welcome to Learning Aim Official</p>
+        <p>Welcome to Learning Aim Official Website</p>
         <p>
           Deployed by Abdul Rehman <code><b>PIAIC-65173</b></code>
         </p>
