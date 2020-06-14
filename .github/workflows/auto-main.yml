@@ -28,20 +28,21 @@ jobs:
       with:
         node-version: 12 
 
-    - name: Creating build
-      run: npm build
-    #- name: GitHub Action for Yarn
-     # uses: Borales/actions-yarn@v2.1.0
-      #with:
-        # Yarn command
-       # cmd: install # npm install/ yarn install
-    
     #- name: Creating build
-     # run: yarn build
+     # run: npm build
+      
+    - name: GitHub Action for Yarn
+      uses: Borales/actions-yarn@v2.1.0
+      with:
+         #Yarn command
+        cmd: install # npm install/ yarn install
+    
+    - name: Creating build
+      run: yarn build
       
     # Runs a set of commands using the runners shell
     - name: Installing surge
       run: npm install --global surge
       
     - name: Deploying website on surge
-      run: surge ./build learning-aim.surge.sh --token ${{ secrets.TOKEN }}
+      run: surge ./build http://learning-aim.surge.sh/ --token ${{ secrets.TOKEN }}
