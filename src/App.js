@@ -1,14 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <p>Welcome to Learning Aim Official</p>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Deployed by Abdul Rehman <code><b>PIAIC-65173</b></code>
         </p>
         <a
           className="App-link"
