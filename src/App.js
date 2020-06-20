@@ -1,23 +1,26 @@
 import React from 'react';
 import './App.css';
+import Welcome from './Welcome'
+import DevelopedBy from './DevelopInfo'
+
+import Dish from './Dish'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Welcome to Learning Aim Official Website</p>
-        <p>
-          Deployed by Abdul Rehman <code><b>PIAIC-65173</b></code>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Welcome assignmentInfo="Assignment 2" topic="Parent child relation & Data passing" />
       </header>
+
+      <body>
+        <Dish dish1="CHICKEN BIRYANI" dish2="CHICKEN KARAHI"
+        dish3="CHICKEN PULAO" dish4="CHICKEN TIKKA"/>
+      </body>
+
+      <footer>
+        <DevelopedBy></DevelopedBy>
+      </footer>
+
     </div>
   );
 }
